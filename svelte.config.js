@@ -7,8 +7,8 @@ const windiPlugin = windi({
 
 module.exports = {
   preprocess: [
-    // if you disable right here, hydrate-client will work again
-    // windiPlugin,
+    // if you comment to disable right here, hydrate-client will work again
+    windiPlugin,
     sveltePreprocess({
       postcss: {
         plugins: [require('autoprefixer')],

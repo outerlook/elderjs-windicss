@@ -1,27 +1,13 @@
-# Minimal Elder.js Template Project
+## WindiCss + Elderjs
+It currently does not work yet, components that should be hydrated on client are not.
 
-<img src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Node&query=engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Felderjs%2Ftemplate%2Fmaster%2Fpackage.json" alt="node version" />
+It was created to investigate this issue.
 
-This is a **minimal** project template for [Elder.js](https://elderguide.com/tech/elderjs/) apps.
-If you are new you should start with the full template: https://github.com/elderjs/template
-For reference:
-- Elder.js source is here: https://github.com/elderjs/elderjs
-- Elder.js Docs are on [ElderGuide.com](https://elderguide.com/tech/elderjs/)
+### Reproduction
+If you start the project as is, the `ColorfulTitle` should be correctly rendered.
+But the clock won't tick.
 
-## Get started
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit Elderjs/minimal elderjs-minimal
-cd elderjs-minimal
-```
-
-### Install the dependencies:
-
-```bash
-npm install # or just yarn
-```
+If you comment out the windicss plugin being add on `svelte.config.js` it will work again, but with no tailwind style.
 
 ### Start Project:
 
